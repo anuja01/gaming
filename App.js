@@ -1,8 +1,8 @@
 import React, {PureComponent} from 'react';
 import {StyleSheet, StatusBar} from 'react-native';
 import {GameEngine} from 'react-native-game-engine';
-import {Finger} from './components/renderers';
-import {MoveFinger} from './components/systems';
+import {Finger} from './src/components/renderers';
+import {MoveFinger} from './src/components/systems';
 
 export default class App extends PureComponent {
   constructor() {
