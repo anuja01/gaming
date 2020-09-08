@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {View} from 'react-native';
 import {array, object, string} from 'prop-types';
@@ -18,6 +19,7 @@ const Obstacle = (props) => {
           width: width,
           borderRadius: 20,
           height: height,
+          backgroundColor: 'white',
         },
       ]}
     />

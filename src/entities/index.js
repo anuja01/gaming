@@ -39,8 +39,14 @@ export default (restart) => {
     Obstacle1: Obstacle(
       world,
       'top',
-      {x: 400, y: 500},
-      {height: 200, width: 100},
+      {x: 400 * 2 - Constants.TOP_PIPE_WIDTH / 2, y: getRandom(100, 400)},
+      {height: topObstacleHeight, width: Constants.TOP_PIPE_WIDTH},
+    ),
+    Obstacle2: Obstacle(
+      world,
+      'bottom',
+      {x: 400 - Constants.BOTTOM_PIPE_WIDTH / 2, y: getRandom(400, 700)},
+      {height: bottomObstacleHeight, width: Constants.BOTTOM_PIPE_WIDTH},
     ),
   };
 };
